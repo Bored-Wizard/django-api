@@ -1,5 +1,6 @@
-from channels.routing import ProtocolTypeRouter
+from django.urls import path
+from . import consumer
 
-application = ProtocolTypeRouter({
-    
-})
+websocket_urlpatterns = [
+    path('ws/notes', consumer.NoteConsumer)
+]
