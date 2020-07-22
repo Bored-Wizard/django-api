@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     'corsheaders',
     'rest_framework',
+    'channels',
 
     'notes',
 ]
@@ -54,6 +55,10 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+CORS_ORIGIN_WHITELIST = (
+    'https://localhost:3000',
+)
 
 ROOT_URLCONF = 'notes_project.urls'
 

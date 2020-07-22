@@ -1,3 +1,6 @@
+image:
+  file: .gitpod.Dockerfile
+
 vscode:
   extensions:
     - emmanuelbeziat.vscode-great-icons@2.1.48:0odGcfoXfQCJwrwbkXlR9Q==
